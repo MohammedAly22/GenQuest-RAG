@@ -26,23 +26,6 @@ GenQuest-RAG is implemented using the following Python packages:
 1. Define some useful functions for highlighting the answer in the paragraph and preparing the instruction prompt that will be fed to the model: 
 ```Python
 def highlight_answer(context, answer):
-    """
-    Highlight the answer in the given context.
-
-    Parameters:
-        - context (str): The context in which the answer is found.
-        - answer (str): The answer to be highlighted.
-
-    Returns:
-        - str: The context with the answer highlighted by '<h>' tags.
-
-    Example:
-    >>> context = 'The quick brown fox jumps over the lazy dog.'
-    >>> answer = 'fox'
-    >>> highlight_answer(context, answer)
-    'The quick brown <h> fox <h> jumps over the lazy dog.'
-    """
-    
     context_splits = context.split(answer)
     
     text = ""
@@ -56,21 +39,6 @@ def highlight_answer(context, answer):
     return text
 
 def prepare_instruction(answer_highlighted_context):
-    """
-    Prepare an instruction prompt for generating a question.
-
-    Parameters:
-        - answer_highlighted_context (str): The context with the answer highlighted by '<h>' tags.
-
-    Returns:
-        - str: The instruction prompt string.
-
-    Example:
-    >>> answer_highlighted_context = 'The quick brown <h> fox <h> jumps over the lazy dog.'
-    >>> prepare_instruction(answer_highlighted_context)
-    'Generate a question whose answer is highlighted by <h> from the context delimited by the triple backticks.\\n    context:\\n    ```\\n    The quick brown <h> fox <h> jumps over the lazy dog.\\n    ```\\n    '
-    """
-    
     instruction_prompt = f"""Generate a question whose answer is highlighted by <h> from the context delimited by the triple backticks.
     context:
     ```
