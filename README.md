@@ -1,4 +1,4 @@
-# GenQuest-RAG | Question Generation Application with RAG
+# GenQuest-RAG | Retrieval Augmented Generation (RAG) for Question Generation
 **GenQuest-RAG** is an innovative system designed to generate insightful questions by harnessing the power of machine learning and utilizing Wikipedia as a vast knowledge repository. Through the integration of advanced natural language processing techniques, the system can retrieve relevant information from Wikipedia articles and utilize it to augment question generation.
 
 By leveraging RAG, the project goes beyond traditional question-generation approaches by incorporating **contextually rich information extracted from Wikipedia articles**. This enables the system to produce more **accurate**, **contextually relevant**, and **informative** questions across a wide range of topics.
