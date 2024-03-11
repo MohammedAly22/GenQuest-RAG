@@ -52,7 +52,7 @@ def prepare_instruction(answer_highlighted_context):
 ```Python
 from transformers import pipeline
 
-pipe = pipeline('text2text-generation', model='mohammedaly2222002/t5-small-squad-qg', device_map='auto')
+pipe = pipeline('text2text-generation', model='mohammedaly2222002/t5-small-squad-qg')
 
 context = """During the 2011–12 season, he set the La Liga and European records\
 for most goals scored in a single season, while establishing himself as Barcelona's\
