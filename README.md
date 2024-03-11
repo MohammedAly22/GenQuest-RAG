@@ -130,7 +130,6 @@ I conducted full fine-tuning on two instances of the `t5-small` model, each with
 |                 | batch size                 | 32    |
 |                 | warmup steps               | 500   |
 |                 | weight decay               | 0.01  |
-|                 |                            |       |
 | T5-Small-FFT-V2 | epochs                     | 10    |
 |                 | batch size                 | 16    |
 |                 | gradient accumlation steps | 4     |
