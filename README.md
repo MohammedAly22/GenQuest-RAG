@@ -105,7 +105,7 @@ The goal of SQuAD is to train and evaluate machine learning models to understand
 # Methodology
 ## Dataset Preparation
 1. I followed Chan and Fan (2019) by introducing the highlight token `<h>` to take into account an answer `a` within context `c` as below:
-$x = [c_1, ..., <h>, a_1, ..., a_a, <h>, ..., c_c]$
+$x = [ c_1, ..., \lt h\gt , a_1, ..., a_a, \lt h\gt , ..., c_c ]$
 
 2. Preparing the instruction prompt by following this template
 ```
