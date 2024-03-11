@@ -124,29 +124,26 @@ Given its extensive parameter count of approximately 60 million, I opted to util
 # Results
 I conducted full fine-tuning on two instances of the `t5-small` model, each with differing hyperparameters. Provided below are the detailed `TrainingArguments` for both versions:
 
-**T5-Small-FFT-V1:**
-| HyperParameter | Value |
-| --- | --- |
-| epochs | 3 |
-| batch size | 32 |
-| warmup steps | 500 |
-| weight decay | 0.01 |
+| Model           | HyperParameter             | Value |
+| ---             | ---                        | ---   |
+| T5-Small-FFT-V1 | epochs                     | 3     |
+|                 | batch size                 | 32    |
+|                 | warmup steps               | 500   |
+|                 | weight decay               | 0.01  |
+|                 |                            |       |
+| T5-Small-FFT-V2 | epochs                     | 10    |
+|                 | batch size                 | 16    |
+|                 | gradient accumlation steps | 4     |
+|                 | learning rate              | 5e-5  |
+|                 | save total limit           | 2     |
+|                 | warmup steps               | 1000  |
+|                 | fp16                       | True  |
+|                 | weight decay               | 0.01  |
+ 
 
-**T5-Small-FFT-V2:**
-| HyperParameter | Value |
-| --- | --- |
-| epochs | 10 |
-| batch size | 16 |
-| gradient accumlation steps | 4 |
-| learning rate | 5e-5 |
-| save total limit | 2 |
-| warmup steps | 1000 |
-| fp16 | True |
-| weight decay | 0.01 |
-
-## T5-Small-FFT-V1
+## T5-Small-FFT-V1 Results
 
 
-## T5-Small-FFT-V2
+## T5-Small-FFT-V2 Results
 
 # Conclusion
