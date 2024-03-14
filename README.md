@@ -115,7 +115,8 @@ context:
 ```
 
 ## Retrieval Augmented Generation (RAG)
-![RAG-Diagram](https://github.com/MohammedAly22/GenQuest-RAG/assets/90681796/bb4187b5-2a04-4141-8f6b-2a5b76b4a68f)
+![RAG-Diagram (1)](https://github.com/MohammedAly22/GenQuest-RAG/assets/90681796/46533610-38ae-45e2-9eba-f650ab0a2646)
+
 
 
 # Results
