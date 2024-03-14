@@ -137,5 +137,5 @@ I conducted full fine-tuning on two instances of the `t5-small` model, each with
 |                 | weight decay               | 0.01  |
 
 Here are the evaluation metrics for the two versions:
-![results](https://github.com/MohammedAly22/GenQuest-RAG/assets/90681796/e5de0774-9d40-4d7e-8ac6-8ddea9c10047)
+![results](https://github.com/MohammedAly22/GenQuest-RAG/assets/90681796/190cc728-8478-4ebc-ae35-f41f74773104)
 
