@@ -115,7 +115,8 @@ context:
 ```
 
 ## Retrieval Augmented Generation (RAG)
-![RAG-Diagram](https://github.com/MohammedAly22/GenQuest-RAG/assets/90681796/21390237-38e3-47b5-a0a2-be70e0de1f98)
+![RAG-Diagram](https://github.com/MohammedAly22/GenQuest-RAG/assets/90681796/bb4187b5-2a04-4141-8f6b-2a5b76b4a68f)
+
 
 # Results
 I conducted full fine-tuning on two instances of the `t5-small` model, each with differing hyperparameters. Provided below are the detailed `TrainingArguments` for both versions:
