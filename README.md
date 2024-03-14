@@ -114,12 +114,8 @@ context:
 ```{answer_highlighted_context}```
 ```
 
-## Model Selection
-### T5-Small
-Given its extensive parameter count of approximately 60 million, I opted to utilize this model as my initial choice for fine-tuning on SQuAD to facilitate answer-aware question generation.
-
-
 ## Retrieval Augmented Generation (RAG)
+![RAG-Diagram](https://github.com/MohammedAly22/GenQuest-RAG/assets/90681796/21390237-38e3-47b5-a0a2-be70e0de1f98)
 
 # Results
 I conducted full fine-tuning on two instances of the `t5-small` model, each with differing hyperparameters. Provided below are the detailed `TrainingArguments` for both versions:
@@ -139,7 +135,6 @@ I conducted full fine-tuning on two instances of the `t5-small` model, each with
 |                 | fp16                       | True  |
 |                 | weight decay               | 0.01  |
  
-
 ## T5-Small-FFT-V1 Results
 
 
