@@ -121,20 +121,11 @@ context:
 # Results
 I conducted full fine-tuning on two instances of the `t5-small` model, each with differing hyperparameters. Provided below are the detailed `TrainingArguments` for both versions:
 
-| Model           | HyperParameter             | Value |
-| ---             | ---                        | ---   |
-| T5-Small-FFT-V1 | epochs                     | 3     |
-|                 | batch size                 | 32    |
-|                 | warmup steps               | 500   |
-|                 | weight decay               | 0.01  |
-| T5-Small-FFT-V2 | epochs                     | 10    |
-|                 | batch size                 | 16    |
-|                 | gradient accumlation steps | 4     |
-|                 | learning rate              | 5e-5  |
-|                 | save total limit           | 2     |
-|                 | warmup steps               | 1000  |
-|                 | fp16                       | True  |
-|                 | weight decay               | 0.01  |
+| Model | epochs | batch size | warmup steps | weight decay | gradient accumulation steps | learning rate | save total limit | fp16 | 
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| T5-Small-FFT-V1 | 3 | 32 | 500 | 0.01 | - | - | - | - |
+| T5-Small-FFT-V2 | 10 | 16 | 1000 | 0.01 | 4 | 5e-5 | 2 | True |
+
 
 Here are the evaluation metrics for the two versions:
 | Model           | BLEU | Rouge1 | Rouge2 | RougeL | RougeLSum | METEOR | BertScore | 
