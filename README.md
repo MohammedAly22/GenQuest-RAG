@@ -118,7 +118,6 @@ context:
 ![RAG-Diagram (1)](https://github.com/MohammedAly22/GenQuest-RAG/assets/90681796/46533610-38ae-45e2-9eba-f650ab0a2646)
 
 
-
 # Results
 I conducted full fine-tuning on two instances of the `t5-small` model, each with differing hyperparameters. Provided below are the detailed `TrainingArguments` for both versions:
 
@@ -136,10 +135,7 @@ I conducted full fine-tuning on two instances of the `t5-small` model, each with
 |                 | warmup steps               | 1000  |
 |                 | fp16                       | True  |
 |                 | weight decay               | 0.01  |
- 
-## T5-Small-FFT-V1 Results
 
+Here are the evaluation metrics for the two versions:
+![results](https://github.com/MohammedAly22/GenQuest-RAG/assets/90681796/e5de0774-9d40-4d7e-8ac6-8ddea9c10047)
 
-## T5-Small-FFT-V2 Results
-
-# Conclusion
