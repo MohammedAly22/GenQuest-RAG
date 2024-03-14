@@ -8,11 +8,9 @@ from utils import (
     prepare_instruction)
 
 
-inference_api_key = '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'
-col1, col2 = st.columns(2)
+inference_api_key = 'YOUR_HF_API_TOKEN'
 
 # 1. Retreival Form
-# with col1:
 st.title('1. Retrieve the File')
 with st.form('Retrieval Form'):
     topic = st.text_input('Enter Your Topic:', placeholder='Please, enter a topic to retrieve a context about')
@@ -36,10 +34,6 @@ with st.form('Retrieval Form'):
                     retriever = retrieve(inference_api_key, chunks)
                     relevant_documents = retriever.get_relevant_documents(topic)
 
-                # docs = {}
-                # for i, doc in enumerate(relevant_documents):
-                #     docs[f'First 200 characters of Chunk {i+1}'] = relevant_documents[0].page_content[:200]
-
                 st.write(f'Retrieved Chunk (First 1000) Characters:')
                 st.info(relevant_documents[0].page_content[:995])
                 st.session_state['context'] = relevant_documents[0].page_content
@@ -50,7 +44,6 @@ with st.form('Retrieval Form'):
             st.error('Please, enter a topic to retreive a context about')
 
 # 2. Generation Form
-# with col2:
 st.title('2. Generate Questions')
 
 with st.form('Generation Form'):
