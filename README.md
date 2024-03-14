@@ -115,7 +115,7 @@ context:
 ```
 
 ## Retrieval Augmented Generation (RAG)
-![RAG-Diagram (1)](https://github.com/MohammedAly22/GenQuest-RAG/assets/90681796/46533610-38ae-45e2-9eba-f650ab0a2646)
+![RAG-Diagram](https://github.com/MohammedAly22/GenQuest-RAG/assets/90681796/902aa4a6-b6fe-4caa-8bdb-d5856f6332bb)
 
 
 # Results
@@ -137,5 +137,8 @@ I conducted full fine-tuning on two instances of the `t5-small` model, each with
 |                 | weight decay               | 0.01  |
 
 Here are the evaluation metrics for the two versions:
-![results](https://github.com/MohammedAly22/GenQuest-RAG/assets/90681796/190cc728-8478-4ebc-ae35-f41f74773104)
+| Model           | BLEU | Rouge1 | Rouge2 | RougeL | RougeLSum | METEOR | BertScore | 
+| ---             | ---  | ---    | ---    | ---    | ---       | ---    | ---       |
+| T5-Small-FFT-V1 | 16.07| 43.14  | 22.13  | 40.09  | 40.10     | 40.24  | 91.22     |
+| T5-Small-FFT-V1 | **20.00**| **47.69**  | **26.43**  | **44.15**  | **44.15**     | **45.84**  | **91.82**     |
 
