@@ -13,7 +13,7 @@ with open('Demo/style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
     
 # 1. Retreival Form
-st.title('1. Retrieve the File')
+st.title('1. Retrieve the Document')
 with st.form('Retrieval Form'):
     if 'inference_api_key' not in os.environ:
         inference_api_key = st.text_input('Enter Your Hugging Face Access Token: ', type='password')
