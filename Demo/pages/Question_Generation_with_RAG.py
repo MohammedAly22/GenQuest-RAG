@@ -15,7 +15,7 @@ with open('Demo/style.css') as f:
 st.title('1. Retrieve the File')
 with st.form('Retrieval Form'):
     if 'inference_api_key' not in os.environ:
-        inference_api_key = st.text_input('Enter Your Hugging Face Access Token: ')
+        inference_api_key = st.text_input('Enter Your Hugging Face Access Token: ', type='password')
         if inference_api_key:
             os.environ['inference_api_key'] = inference_api_key
         
