@@ -131,5 +131,5 @@ Here are the evaluation metrics for the two versions:
 | Model           | BLEU | Rouge1 | Rouge2 | RougeL | RougeLSum | METEOR | BertScore | 
 | ---             | ---  | ---    | ---    | ---    | ---       | ---    | ---       |
 | T5-Small-FFT-V1 | 16.07| 43.14  | 22.13  | 40.09  | 40.10     | 40.24  | 91.22     |
-| T5-Small-FFT-V1 | **20.00**| **47.69**  | **26.43**  | **44.15**  | **44.15**     | **45.84**  | **91.82**     |
+| T5-Small-FFT-V2 | **20.00**| **47.69**  | **26.43**  | **44.15**  | **44.15**     | **45.84**  | **91.82**     |
 
