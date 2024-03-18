@@ -10,6 +10,9 @@ from utils import (
 
 inference_api_key = 'YOUR_HF_API_TOKEN'
 
+with open('style.css') as f:
+    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+    
 # 1. Retreival Form
 st.title('1. Retrieve the File')
 with st.form('Retrieval Form'):
