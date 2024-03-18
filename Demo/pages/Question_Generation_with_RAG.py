@@ -1,4 +1,5 @@
 import streamlit as st
+import os
 from utils import (
     pipe,
     get_wikipedia_article,
@@ -8,7 +9,9 @@ from utils import (
     prepare_instruction)
 
 
-inference_api_key = 'YOUR_HF_API_TOKEN'
+# inference_api_key = 'YOUR_HF_API_TOKEN'
+
+os.environ['inference_api_key'] = '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'
 
 with open('Demo/style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
@@ -34,7 +37,7 @@ with st.form('Retrieval Form'):
                 with st.spinner(f"Getting Relevant Chunks..."):
                     documents = load_documents(f"{topic}.txt")
                     chunks = split_to_chunks(documents)
-                    retriever = retrieve(inference_api_key, chunks)
+                    retriever = retrieve(os.environ['inference_api_key'], chunks)
                     relevant_documents = retriever.get_relevant_documents(topic)
 
                 st.write(f'Retrieved Chunk (First 1000) Characters:')
