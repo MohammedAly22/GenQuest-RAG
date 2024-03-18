@@ -128,4 +128,4 @@ def prepare_instruction(context, answer):
     return instruction_prompt
 
 
-pipe = pipeline('text2text-generation', model='mohammedaly2222002/t5-small-squad-qg-v2')
+pipe = pipeline('text2text-generation', model='mohammedaly22/t5-small-squad-qg-v2')
