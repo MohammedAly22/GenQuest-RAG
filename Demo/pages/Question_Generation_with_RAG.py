@@ -8,8 +8,6 @@ from utils import (
     retrieve,
     prepare_instruction)
 
-del os.environ['inference_api_key']
-
 with open('Demo/style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
     
