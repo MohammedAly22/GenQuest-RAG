@@ -40,8 +40,6 @@ with st.form('Retrieval Form'):
                     retriever = retrieve(os.environ['inference_api_key'], chunks)
                     relevant_documents = retriever.get_relevant_documents(topic)
 
-                st.write(f'Retrieved Chunk (First 1000) Characters:')
-                st.info(relevant_documents[0].page_content[:995])
                 st.session_state['context'] = relevant_documents[0].page_content
             else:
                 st.error(article_text)
