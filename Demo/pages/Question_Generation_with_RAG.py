@@ -8,7 +8,7 @@ from utils import (
     retrieve,
     prepare_instruction)
 
-if !os.environ['inference_api_key']:
+if not os.environ['inference_api_key']:
     inference_api_key = st.text_input('Enter Your Hugging Face Access Token: ')
     os.environ['inference_api_key'] = inference_api_key
 
