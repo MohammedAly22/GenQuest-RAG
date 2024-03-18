@@ -52,7 +52,7 @@ with st.form('Retrieval Form'):
 st.title('2. Generate Questions')
 
 with st.form('Generation Form'):
-    selected_model = st.selectbox(label='Select a Model', options=['T5-Small-V1', 'T5-Small-V2'])
+    selected_model = st.selectbox(label='Select a Model', options=['T5-Small-V2', 'T5-Small-V1'])
     context = st.text_area(label='Enter Your Context: ', placeholder='Please, enter a context to generate question from', height=298, key='context')
     answer = st.text_input(label='Enter Your Answer', placeholder='Please, enter an answer snippet from the retrieved context')
     num_of_questions = st.number_input(
