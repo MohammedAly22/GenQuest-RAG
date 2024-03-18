@@ -2,7 +2,7 @@ import streamlit as st
 from utils import pipe, prepare_instruction
 
 
-with open('style.css') as f:
+with open('Demo/style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 st.title("Question Generation without RAG")
