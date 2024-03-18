@@ -8,10 +8,9 @@ from utils import (
     retrieve,
     prepare_instruction)
 
-
-# inference_api_key = 'YOUR_HF_API_TOKEN'
-
-os.environ['inference_api_key'] = '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'
+if !os.environ['inference_api_key']:
+    inference_api_key = st.text_input('Enter Your Hugging Face Access Token: ')
+    os.environ['inference_api_key'] = inference_api_key
 
 with open('Demo/style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
