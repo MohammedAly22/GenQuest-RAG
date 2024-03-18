@@ -8,7 +8,7 @@ from utils import (
     retrieve,
     prepare_instruction)
 
-
+del os.environ['inference_api_key']
 
 with open('Demo/style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
@@ -16,9 +16,10 @@ with open('Demo/style.css') as f:
 # 1. Retreival Form
 st.title('1. Retrieve the File')
 with st.form('Retrieval Form'):
-    if "inference_api_key" not in os.environ:
+    if 'inference_api_key' not in os.environ:
         inference_api_key = st.text_input('Enter Your Hugging Face Access Token: ')
-        os.environ['inference_api_key'] = inference_api_key
+        if inference_api_key:
+            os.environ['inference_api_key'] = inference_api_key
         
     topic = st.text_input('Enter Your Topic:', placeholder='Please, enter a topic to retrieve a context about')
     submitted = st.form_submit_button('Retrieve')
