@@ -8,8 +8,6 @@ from utils import (
     retrieve,
     prepare_instruction)
 
-del os.environ['inference_api_key']
-
 if "inference_api_key" not in os.environ:
     inference_api_key = st.text_input('Enter Your Hugging Face Access Token: ')
     os.environ['inference_api_key'] = inference_api_key
