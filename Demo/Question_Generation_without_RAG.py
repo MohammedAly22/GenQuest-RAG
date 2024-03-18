@@ -2,6 +2,9 @@ import streamlit as st
 from utils import pipe, prepare_instruction
 
 
+with open('style.css') as f:
+    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+
 st.title("Question Generation without RAG")
 with st.form('Generation Form'):
     context = st.text_area(label='Enter Your Context: ', placeholder='Please, enter a context to generate question from', height=300)
