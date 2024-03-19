@@ -19,8 +19,12 @@ GenQuest-RAG is implemented using the following Python packages:
 | Weaviate | An open-source, cloud-native, vector search engine that allows for semantic search and exploration of structured and unstructured data. |
 
 # Usage
+Demo link: https://genquest-rag.streamlit.app/
+
+Hugging Face Model Card: https://huggingface.co/mohammedaly22/t5-small-squad-qg-v2
+
 ## Running Demo:
-https://github.com/MohammedAly22/GenQuest-RAG/assets/90681796/f05a1968-d314-4c4a-a11c-37e5c018e72c
+https://github.com/MohammedAly22/GenQuest-RAG/assets/90681796/f199c567-169c-4803-b0bf-f1dabdfdf93d
 
 ## Usage as a high-level Pipeline:
 1. Define some useful functions for highlighting the answer in the paragraph and preparing the instruction prompt that will be fed to the model: 
