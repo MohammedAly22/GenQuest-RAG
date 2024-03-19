@@ -7,9 +7,9 @@ with open('Demo/style.css') as f:
 
 st.title("Question Generation without RAG")
 with st.form('Generation Form'):
-    selected_model = st.selectbox(label='Select a Model', options=['T5-Small-V2', 'T5-Small-V1'])
+    selected_model = st.selectbox(label='Select a Model:', options=['T5-Small-V2', 'T5-Small-V1'])
     context = st.text_area(label='Enter Your Context: ', placeholder='Please, enter a context to generate question from', height=200)
-    answer = st.text_input(label='Enter Your Answer', placeholder='Please, enter an answer snippet from the provided context')
+    answer = st.text_input(label='Enter Your Answer:', placeholder='Please, enter an answer snippet from the provided context')
     num_of_questions = st.number_input(
         label='Enter a Number of Generated Questions:',
         placeholder='Please, enter a number of generated questions you need',
