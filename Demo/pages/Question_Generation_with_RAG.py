@@ -6,8 +6,8 @@ st.set_page_config(layout="wide")
 inference_api_key = "##"
 col1, col2 = st.columns(2)
 
-with open("./style.css") as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+# with open("./style.css") as f:
+#     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 
 st.title("1. Retrieve the File")
